@@ -1,20 +1,21 @@
 <template>
   <div>
     <div class="header">
-      
-    <HeaderVoices :voices="links"/>
-      
+      <HeaderVoices :voices="links"/>      
     </div>
+    <Jumbotron />
   </div>
 </template>
 
 <script>
 import HeaderVoices from './sections/HeaderVoices.vue'
+import Jumbotron from './sections/Jumbotron.vue'
 
 export default {
   name: 'Header',
   components: {
-    HeaderVoices
+    HeaderVoices,
+    Jumbotron
   },
   data() {
       return{
