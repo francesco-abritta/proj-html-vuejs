@@ -39,16 +39,14 @@ export default {
     height: 70px;
     background-color: $header-color;
     color: $header-color-text;
-    display: flex;
-    justify-content: center;
 
       img{
         height: 20px;
-        margin-right: 40px;
+        margin-right: 140px;
       }
 
       .voices{
-        background: blue;
+        width: 85%;
           ul{
             list-style: none;
             display: flex;
