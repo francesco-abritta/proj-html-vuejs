@@ -15,7 +15,12 @@
           <li>C</li>
           <li>U</li>
 
-          <li><input type="text"></li>
+          <li>
+            <span class="input">
+              <input type="text" placeholder="Search...">
+              L
+            </span>
+          </li>
         </ul>
       </div>
       
@@ -39,6 +44,7 @@ export default {
     height: 70px;
     background-color: $header-color;
     color: $header-color-text;
+    font-size: $header-font-size;
 
       img{
         height: 20px;
@@ -46,7 +52,7 @@ export default {
       }
 
       .voices{
-        width: 85%;
+        width: 90%;
           ul{
             list-style: none;
             display: flex;
@@ -57,6 +63,21 @@ export default {
               li{
                 margin: 0 10px;
               }
+
+              .input{
+                color: black;
+                background: white;
+                padding: 10px 10px;
+                border-radius: 5px;
+                  input{
+                    border: 0;
+                    width: 100px;
+                  }
+                  input:focus {
+                    outline-width: 0;
+                  }
+              }
+
           }
       }
   }
