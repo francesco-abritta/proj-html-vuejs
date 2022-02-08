@@ -2,37 +2,43 @@
   <div>
     <div class="header">
       
-      <div class="voices">
-        <ul>
-          <li><img src="../assets/img2/light-logo.png" alt=""></li>
-
-          <li>Ciao</li>
-          <li>Ciao</li>
-          <li>Ciao</li>
-          <li>Ciao</li>
-          <li>Ciao</li>
-          <li>Ciao</li>
-          <li>C</li>
-          <li>U</li>
-
-          <li>
-            <span class="input">
-              <input type="text" placeholder="Search...">
-              L
-            </span>
-          </li>
-        </ul>
-      </div>
+    <HeaderVoices :voices="links"/>
       
     </div>
   </div>
 </template>
 
 <script>
+import HeaderVoices from './sections/HeaderVoices.vue'
+
 export default {
   name: 'Header',
-  props: {
-
+  components: {
+    HeaderVoices
+  },
+  data() {
+      return{
+        links: [
+          {
+            text: 'Home'
+          },
+          {
+            text: 'Pages'
+          },
+          {
+            text: 'Courses'
+          },
+          {
+            text: 'Features'
+          },
+          {
+            text: 'Blog'
+          },
+          {
+            text: 'Shop'
+          }
+        ]
+      }
   }
 }
 </script>
@@ -45,41 +51,6 @@ export default {
     background-color: $header-color;
     color: $header-color-text;
     font-size: $header-font-size;
-
-      img{
-        height: 20px;
-        margin-right: 140px;
-      }
-
-      .voices{
-        width: 90%;
-          ul{
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 70px;
-
-              li{
-                margin: 0 10px;
-              }
-
-              .input{
-                color: black;
-                background: white;
-                padding: 10px 10px;
-                border-radius: 5px;
-                  input{
-                    border: 0;
-                    width: 100px;
-                  }
-                  input:focus {
-                    outline-width: 0;
-                  }
-              }
-
-          }
-      }
   }
 
   
