@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="header">
-      <div class="logo">
-
-      </div>
+      
       <div class="voices">
         <ul>
+          <li><img src="../assets/img2/light-logo.png" alt=""></li>
+
           <li>Ciao</li>
           <li>Ciao</li>
           <li>Ciao</li>
@@ -14,11 +14,11 @@
           <li>Ciao</li>
           <li>C</li>
           <li>U</li>
+
+          <li><input type="text"></li>
         </ul>
       </div>
-      <div class="searchbar">
-        <input type="text">
-      </div>
+      
     </div>
   </div>
 </template>
@@ -40,9 +40,11 @@ export default {
     background-color: $header-color;
     color: $header-color-text;
     display: flex;
+    justify-content: center;
 
-      .logo{
-
+      img{
+        height: 20px;
+        margin-right: 40px;
       }
 
       .voices{
@@ -59,15 +61,6 @@ export default {
               }
           }
       }
-
-      .searchbar{
-          display: flex;
-          align-items: center;
-          background: red;
-      }
-      
-
-
   }
 
   
