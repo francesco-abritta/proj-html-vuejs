@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <div class="contenitore">
       <Main />
-    </div>
   </div>
 </template>
 
@@ -22,8 +20,5 @@ export default {
 
 <style lang="scss">
   @import './assets/global.scss';
-  .contenitore{
-    margin: 0 auto;
-    max-width: 65%;
-  }
+  
 </style>

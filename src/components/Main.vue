@@ -1,20 +1,33 @@
 <template>
   <div>
-    <MainServices :numeri="numbers" :cardServices="servicesCard" :listServices="servicesList"/>
+      <div class="services">
+        <div class="contenitore">
+            <MainServices :numeriServices="servicesNumbers" :cardServices="servicesCard" :listServices="servicesList"/>
+        </div>
+      </div>
+      
+      <div class="courses">
+        <div class="contenitore">
+            <MainCourses :infoCourses="coursesInfo"/>
+        </div>
+      </div>
+      
   </div>
 </template>
 
 <script>
 import MainServices from './sections/MainServices.vue'
+import MainCourses from './sections/MainCourses.vue'
 
 export default {
     name:'Main',
     components:{
-        MainServices
+        MainServices,
+        MainCourses
     },
     data() {
       return{
-        numbers: [
+        servicesNumbers: [
           {
             number: '1.926',
             text: 'FINISHED SESSIONS'
@@ -55,7 +68,7 @@ export default {
             image: require('../assets/img2/home-6-service-image-04.png')
           }
         ],
-        
+
         servicesList: [
           {
             text: 'Select & costumize courses to your prefernces'
@@ -70,14 +83,61 @@ export default {
             text: 'Get the desired certificate delivered at house'
           }
         ],
+
+        coursesInfo: [
+          {
+            price: '$40.00',
+            work: 'Learning to Write as a Professional Author',
+            data1: '17',
+            data2: '50'
+          },
+          {
+            price: 'Free',
+            work: 'Costumer-centric Info-Tech Strategies',
+            data1: '24',
+            data2: '769'
+          },
+          {
+            price: '$19.00',
+            work: 'Open Programming Courses for Everyone: Phyton',
+            data1: '17',
+            data2: '62'
+          },
+          {
+            price: '$26.00',
+            work: 'Academic Listening and Note-taking',
+            data1: '14',
+            data2: '67'
+          },
+          {
+            price: '$39.00',
+            work: 'Master jQuery in a Short Period of Time',
+            data1: '6',
+            data2: '51'
+          },
+          {
+            price: '$59.00',
+            work: 'Introduction to Javascript for Beginners',
+            data1: '14',
+            data2: '76'
+          },
+        ],
       }
   }
 }
 </script>
 
 <style scoped>
-
     div{
         margin-top: 200px;
+    }
+
+    .contenitore{
+        margin: 0 auto;
+        max-width: 65%;
+    }
+
+    .courses{
+        background: #F5F7FA;
     }
 </style>

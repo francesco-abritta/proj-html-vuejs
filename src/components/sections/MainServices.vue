@@ -6,7 +6,7 @@
           <p style="color:grey">/Founder & CEO</p>
       </div>
       <div class="numbers">
-          <div v-for="(elemento, indice) in numeri" :key="indice" class="item">
+          <div v-for="(elemento, indice) in numeriServices" :key="indice" class="item">
             <h1>{{elemento.number}}</h1>
             <p>{{elemento.text}}</p>
           </div>
@@ -42,7 +42,7 @@
 export default {
     name: 'MainServices',
     props: {
-        numeri: Array,
+        numeriServices: Array,
         cardServices: Array,
         listServices: Array
     },
