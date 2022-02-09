@@ -42,6 +42,12 @@ export default {
           border-radius: 5px;
           background: $lightgreen;
           color: white;
+          cursor: pointer;
+      }
+
+      button:hover{
+          background: white;
+          color: $lightgreen;
       }
 
       img{

@@ -169,10 +169,16 @@ export default {
     
 
     button{
+        cursor: pointer;
         padding: 20px 30px;
         border: 0;
         border-radius: 5px;
         background: $lightgreen;
+        color: white;
+    }
+
+    button:hover{
+        background: $header-color;
         color: white;
     }
 
