@@ -21,14 +21,17 @@
           </div>
       </div>
       <div class="sponsor">
-
+          <img v-for="(elemento, indice) in imagesTalk" :key="'indiceImage'+indice" :src="elemento.image">
       </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:'MainTalk'
+    name:'MainTalk',
+    props:{
+        imagesTalk: Array
+    }
 }
 </script>
 
@@ -53,15 +56,15 @@ export default {
         }
 
         .image{
-            background: red;
             position: relative;
             height: 220px;
-            margin-right: 60px;
+            margin-right: 80px;
 
             img{
                 position: absolute;
                 top: 110px;
                 right: 0;
+                z-index: -1;
             }
 
             .photo{
@@ -69,17 +72,19 @@ export default {
                 width: 170px;
                 height: 170px;
                 overflow: hidden;
-                background: blue;
+                background-image: url('../../assets/img2/testimonial-avata-02.jpg');
+                background-position: center;
+                background-size: cover;
             }
 
         }
 
         .phrase{
-            max-width: 70%;
+            max-width: 55%;
 
             .text p{
-                font-size: 30px;
-                line-height: 40px;
+                font-size: 25px;
+                line-height: 45px;
                 margin-bottom: 35px;
             }
 
@@ -93,6 +98,19 @@ export default {
                 font-size: 12px;
                 color: grey;
             }
+        }
+
+        .sponsor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                max-width: 100px;
+                max-height: 70px;
+            }
+
+            
         }
 
         

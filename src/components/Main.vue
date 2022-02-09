@@ -14,7 +14,7 @@
 
       <div class="talk">
         <div class="contenitore">
-            <MainTalk />
+            <MainTalk :imagesTalk="talkImages"/>
         </div>
       </div>
       
@@ -128,6 +128,27 @@ export default {
             work: 'Introduction to Javascript for Beginners',
             data1: '14',
             data2: '76'
+          },
+        ],
+
+        talkImages: [
+          {
+            image: require('../assets/img2/client-logo-colored-01.png')
+          },
+          {
+            image: require('../assets/img2/client-logo-colored-02.png')
+          },
+          {
+            image: require('../assets/img2/client-logo-colored-03.png')
+          },
+          {
+            image: require('../assets/img2/client-logo-colored-04.png')
+          },
+          {
+            image: require('../assets/img2/client-logo-colored-05.png')
+          },
+          {
+            image: require('../assets/img2/client-logo-colored-06.png')
           },
         ],
       }
