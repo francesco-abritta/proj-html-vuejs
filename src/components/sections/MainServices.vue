@@ -56,11 +56,12 @@ export default {
     .title{
         text-align: center;
         margin: 0px auto;
-        max-width: 55%;
+        max-width: 80%;
 
         h2{
             line-height: 35px;
             margin-top: 300px;
+            font-size: 35px;
         }
 
         p{
@@ -77,6 +78,7 @@ export default {
 
         h1{
             color: $lightgreen;
+            font-size: 35px;
         }
 
         p{
