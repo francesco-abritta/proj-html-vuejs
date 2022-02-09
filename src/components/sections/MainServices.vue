@@ -98,8 +98,6 @@ export default {
             display: flex;
             flex-wrap: wrap;
 
-            
-
             .card{
                 display: flex;
                 flex-direction: column;

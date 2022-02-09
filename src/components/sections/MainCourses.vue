@@ -8,7 +8,7 @@
 
         <div class="cards">
             <div class="card" v-for="(elemento, indice) in infoCourses" :key="indice">
-                <div class="image">
+                <div class="image" :class="'indice'+indice">
                     <!-- <img src="../../assets/img2/course-02-480x298.jpg" alt=""> -->
                     <!-- <img src="../../assets/img2/stock-full-hd-03-480x298.jpg" alt=""> -->
                 </div>
@@ -99,7 +99,6 @@ export default {
                 height: 140px;
                 overflow: hidden;
                 position: relative;
-                background: red;
 
                 // img{
                 //     position: absolute;
@@ -162,11 +161,37 @@ export default {
         background: $header-color;
         color: white;
     }
-
-        
-
-        
-
         
 }
+.indice0{
+    background-image: url('../../assets/img2/course-02-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.indice1{
+    background-image: url('../../assets/img2/stock-full-hd-03-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.indice2{
+    background-image: url('../../assets/img2/stock-full-hd-04-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.indice3{
+    background-image: url('../../assets/img2/stock-full-hd-06-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.indice4{
+    background-image: url('../../assets/img2/course-featured-image-01-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.indice5{
+    background-image: url('../../assets/img2/stock-full-hd-05-480x298.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
 </style>
