@@ -63,7 +63,7 @@ export default {
             justify-content: space-between;
 
             .card{
-                max-width: 30%;
+                max-width: 31%;
 
                 img{
                     max-width: 100%;
@@ -78,7 +78,7 @@ export default {
 
                 h3{
                     line-height: 30px;
-                    margin: 10px 0;
+                    margin: 20px 0;
                 }
 
                 .info{

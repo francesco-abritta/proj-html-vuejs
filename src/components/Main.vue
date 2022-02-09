@@ -23,6 +23,12 @@
             <MainBlogs :CardBlogs="blogsCard"/>
         </div>
       </div>
+
+      <div class="learn">
+        <div class="contenitore">
+            <MainLearn :CardLearn="learnCard"/>
+        </div>
+      </div>
       
   </div>
 </template>
@@ -32,6 +38,7 @@ import MainServices from './sections/MainServices.vue'
 import MainCourses from './sections/MainCourses.vue'
 import MainTalk from './sections/MainTalk.vue'
 import MainBlogs from './sections/MainBlogs.vue'
+import MainLearn from './sections/MainLearn.vue'
 
 export default {
     name:'Main',
@@ -39,7 +46,8 @@ export default {
         MainServices,
         MainCourses,
         MainTalk,
-        MainBlogs
+        MainBlogs,
+        MainLearn
     },
     data() {
       return{
@@ -182,6 +190,28 @@ export default {
             date: 'May 15, 2020',
             views: '397',
           },
+        ],
+        learnCard: [
+          {
+            icon: require('../assets/img1/flag.png'),
+            title: 'Idea Discussion',
+            par: 'Get teamed up with the specialists who work and teach coding for years at famous univeristies',
+          },
+          {
+            icon: require('../assets/img1/setting.jpeg'),
+            title: 'Web Development',
+            par: 'Learn to start building a webpage from scratch. You decide your own pace, course and speed.',
+          },
+          {
+            icon: require('../assets/img1/donut.png'),
+            title: 'System Administration',
+            par: 'Learners are encouraged to study the mechanism and structure of system administration.',
+          },
+          {
+            icon: require('../assets/img1/desktop.png'),
+            title: 'Grapich Design',
+            par: 'Have a passion for graphics arts? Show your talents with confidence and self-assertiveness',
+          }
         ],
       }
   }
