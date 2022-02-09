@@ -17,6 +17,12 @@
             <MainTalk :imagesTalk="talkImages"/>
         </div>
       </div>
+
+      <div class="blogs">
+        <div class="contenitore">
+            <MainBlogs :CardBlogs="blogsCard"/>
+        </div>
+      </div>
       
   </div>
 </template>
@@ -25,13 +31,15 @@
 import MainServices from './sections/MainServices.vue'
 import MainCourses from './sections/MainCourses.vue'
 import MainTalk from './sections/MainTalk.vue'
+import MainBlogs from './sections/MainBlogs.vue'
 
 export default {
     name:'Main',
     components:{
         MainServices,
         MainCourses,
-        MainTalk
+        MainTalk,
+        MainBlogs
     },
     data() {
       return{
@@ -151,6 +159,30 @@ export default {
             image: require('../assets/img2/client-logo-colored-06.png')
           },
         ],
+
+        blogsCard: [
+          {
+            image: require('../assets/img2/artist-blog-03-480x325.jpeg'),
+            role: 'ARTIST',
+            job: 'Brush Strokes Energize Trees in Paintings',
+            date: 'May 15, 2020',
+            views: '688',
+          },
+          {
+            image: require('../assets/img2/artist-blog-01-480x325.jpg'),
+            role: 'ARTIST',
+            job: 'Pocket-Sized Notebooks Hold Miniature Paintings',
+            date: 'May 15, 2020',
+            views: '603',
+          },
+          {
+            image: require('../assets/img2/artist-blog-02-480x325.jpg'),
+            role: 'ARTIST',
+            job: 'Connection Between Self-Portraits and Identity',
+            date: 'May 15, 2020',
+            views: '397',
+          },
+        ],
       }
   }
 }
@@ -166,7 +198,7 @@ export default {
         max-width: 65%;
     }
 
-    .courses{
+    .courses, .blogs{
         background: #F5F7FA;
     }
 </style>
