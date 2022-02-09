@@ -88,7 +88,7 @@ export default {
             max-width: 47%;
             padding: 5px;
             line-height: 25px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             margin-right: 20px;
             border-radius: 15px;
             
