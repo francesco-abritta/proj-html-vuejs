@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="total">
       <div class="services">
         <div class="contenitore">
             <MainServices :numeriServices="servicesNumbers" :cardServices="servicesCard" :listServices="servicesList"/>
@@ -11,6 +11,12 @@
             <MainCourses :infoCourses="coursesInfo"/>
         </div>
       </div>
+
+      <div class="talk">
+        <div class="contenitore">
+            <MainTalk />
+        </div>
+      </div>
       
   </div>
 </template>
@@ -18,12 +24,14 @@
 <script>
 import MainServices from './sections/MainServices.vue'
 import MainCourses from './sections/MainCourses.vue'
+import MainTalk from './sections/MainTalk.vue'
 
 export default {
     name:'Main',
     components:{
         MainServices,
-        MainCourses
+        MainCourses,
+        MainTalk
     },
     data() {
       return{
@@ -128,7 +136,7 @@ export default {
 </script>
 
 <style scoped>
-    div{
+    .total{
         margin-top: 200px;
     }
 

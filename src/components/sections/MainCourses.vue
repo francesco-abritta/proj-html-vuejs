@@ -77,6 +77,7 @@ export default {
 
         .cards{
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
             margin-top: 50px;
 
@@ -84,7 +85,7 @@ export default {
             .card{
             display: flex;
             align-items: center;
-            width: 47%;
+            max-width: 47%;
             padding: 5px;
             line-height: 25px;
             margin-bottom: 20px;

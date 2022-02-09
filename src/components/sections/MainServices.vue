@@ -91,7 +91,7 @@ export default {
     .services{
         margin-bottom: 50px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
 
         .col1{
             width: 500px;
