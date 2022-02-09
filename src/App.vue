@@ -22,8 +22,8 @@ export default {
 
 <style lang="scss">
   @import './assets/global.scss';
-  .cont{
+  .contenitore{
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 65%;
   }
 </style>

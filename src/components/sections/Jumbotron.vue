@@ -57,9 +57,12 @@ export default {
           height: 400px;
       }
       .center{
+          height: 460px;
           padding: 30px;
           background: white;
           border-radius: 20px;
+        //   border: 1px solid grey;
+          box-shadow: 0px 10px 10px #dedede;
       }
 
       .left, .right{
