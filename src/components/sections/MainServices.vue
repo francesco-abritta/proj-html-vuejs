@@ -13,25 +13,12 @@
       </div>
       <div class="services">
           <div class="col1">
-              <div class="card">
-                  <h3>Graphic Design</h3>
-                  <p>Have a passion for graphics and arts? Show your talents whit confidence and self assertiveness.</p>
-                  <img src="../../assets/img2/home-6-service-image-01.png" alt="">
-              </div>
-              <div class="card">
-                  <h3>Graphic Design</h3>
-                  <p>Have a passion for graphics and arts? Show your talents whit confidence and self assertiveness.</p>
-                  <img src="../../assets/img2/home-6-service-image-01.png" alt="">
-              </div>
-              <div class="card">
-                  <h3>Graphic Design</h3>
-                  <p>Have a passion for graphics and arts? Show your talents whit confidence and self assertiveness.</p>
-                  <img src="../../assets/img2/home-6-service-image-01.png" alt="">
-              </div>
-              <div class="card">
-                  <h3>Graphic Design</h3>
-                  <p>Have a passion for graphics and arts? Show your talents whit confidence and self assertiveness.</p>
-                  <img src="../../assets/img2/home-6-service-image-01.png" alt="">
+              <div class="card" v-for="(elemento, indice) in cardServices" :key="'card'+indice" :class="'index'+indice">
+                  <div class="text">
+                        <h3>{{elemento.titolo}}</h3>
+                        <p>{{elemento.par}}</p>
+                  </div>
+                  <img :src="elemento.image" alt="">
               </div>
           </div>
           
@@ -40,17 +27,8 @@
                     <p>TOGETHER WE CAN CREATE</p>
                     <h1>Services We <span>Can Provide</span> For My Clients.</h1>
                     <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i> Select & costumize courses to your preferences
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i> Select & costumize courses to your preferences
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i> Select & costumize courses to your preferences
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i> Select & costumize courses to your preferences
+                        <li v-for="(elem, index) in listServices" :key="'list'+index">
+                            <i class="fa-solid fa-check"></i> {{elem.text}}
                         </li>
                     </ul>
                     <button><strong>Get started for free</strong></button>
@@ -65,9 +43,10 @@ export default {
     name: 'MainServices',
     props: {
         numeri: Array,
-        // cardServices: Array,
-        // listServices: Array
-    }
+        cardServices: Array,
+        listServices: Array
+    },
+    
 }
 </script>
 
@@ -113,24 +92,28 @@ export default {
         justify-content: space-between;
 
         .col1{
-            width: 440px;
+            width: 500px;
             display: flex;
             flex-wrap: wrap;
 
+            
+
             .card{
-                width: 200px;
-                height: 315px;
+                display: flex;
+                flex-direction: column;
+                width: 220px;
+                height: 350px;
                 box-shadow: 0px 0px 25px 0px #8d8c8c;
                 border-radius: 10px;
                 margin: 10px;
-                // margin-top: 45px;
 
                 h3{
-                    padding: 20px 10px;
+                    padding: 20px 20px;
+                    font-size: 15px;
                 }
 
                 p{
-                    padding: 0 10px;
+                    padding: 0 20px;
                     color: grey;
                     font-size: 14px;
                     line-height: 22px;
@@ -138,15 +121,21 @@ export default {
 
                 img{
                     width: 200px;
+                    height: 180px;
                 }
 
             }
+
+            
         }
+
+        
 
         .col2{
             width: 400px;
             display: flex;
             align-items: center;
+            margin-left: 50px;
 
             .block *{
                 margin: 20px 0;
@@ -185,6 +174,32 @@ export default {
         border-radius: 5px;
         background: $lightgreen;
         color: white;
+    }
+
+    .index1, .index3{
+        margin-top: 45px !important;
+    }
+
+    .index2, .index3{
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+
+    .index1 img, .index2 img{
+        width: 150px !important;
+    }
+
+    .index1{
+        align-items: center;
+    }
+
+    .index3 img{
+        height: 160px !important;
+        width: 180px !important;
+    }
+
+    .index3{
+        align-items: center;
     }
 
     
