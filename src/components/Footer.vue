@@ -65,7 +65,7 @@ export default {
 
                 p{
                     opacity: 0.5;
-                    margin: 14px 0;
+                    margin-bottom: 28px;
                     font-size: 14px;
                 }
 
@@ -110,8 +110,6 @@ export default {
                 }
             }
 
-            
-
         }
         .final{
                 text-align: center;
@@ -121,6 +119,14 @@ export default {
                     font-size: 10px;
                     color: rgb(160, 159, 159);
                 }
-            }
+        }
+
+        .explore p{
+            margin: 14px 0 !important;
+        }
+
+        .info h3, .left h3{
+            margin-bottom: 14px !important;
+        }
     }
 </style>
