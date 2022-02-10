@@ -2,11 +2,9 @@
   <div class="contenitore">
       <div class="footer">
           <div class="left">
+                <h3>Address</h3>
                 <ul class="address">
-                    <li><strong>Address</strong></li>
-                    <li><p>ciaociaociaociaociaocio</p></li>
-                    <li><p>ciaociaociaociaociaocio</p></li>
-                    <li><p>ciaociaociaociaociaocio</p></li>
+                    <li v-for="(elemento,indice) in address" :key="indice+'address'"><p>{{elemento.link}}</p></li>
                 </ul>
                 <ul class="icon">
                     <li><i class="fa-brands fa-facebook-square"></i></li>
@@ -17,42 +15,38 @@
           </div>
 
           <div class="right">
-                <div>
-                    <h3>Explore</h3>
                     <div class="explore">
-                        <ul class="explore-left">
-                            <li><p>ciaociao</p></li>
-                            <li><p>ciaociao</p></li>
-                            <li><p>ciaociao</p></li>
+                        
+                        <h3>Explore</h3>
+                        <ul class="exploreList">
+                            <li v-for="(elemento,indice) in explore" :key="indice+'explore'"><p>{{elemento.link}}</p></li>
                         </ul>
 
-                        <ul class="explore-right">
-                            <li><p>ciaociao</p></li>
-                            <li><p>ciaociao</p></li>
-                            <li><p>ciaociao</p></li>
-                        </ul>
 
                     </div>
-                </div>
-                <div>
+                <div class="info">
                     <h3>Information</h3>
                     <ul class="information">
-                        <li><p>ciaociaociaociaociaocio</p></li>
-                        <li><p>ciaociaociaociaociaocio</p></li>
-                        <li><p>ciaociaociaociaociaocio</p></li>
-                        <li><p>ciaociaociaociaociaocio</p></li>
+                        <li v-for="(elemento,indice) in information" :key="indice+'information'"><p>{{elemento.link}}</p></li>
                     </ul>
                 </div>
-                
           </div>
-          
+      </div>
+
+      <div class="final">
+            <p><i class="fa-solid fa-copyright"></i> 2020 MaxCoach, All Rights Reserved</p>
       </div>
   </div>
 </template>
 
 <script>
 export default {
-    name:'Footer'
+    name:'Footer',
+    props:{
+        address: Array,
+        explore: Array,
+        information: Array
+    }
 }
 </script>
 
@@ -85,12 +79,15 @@ export default {
                 width: 50%;
 
                 .explore{
-                    min-width: 200%;
                     max-height: 120px;
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    align-content: space-between;
+
+                    .exploreList{
+                        height: 150px;
+                        width: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
                     
                     li{
                         margin-right: 90px;
@@ -113,6 +110,17 @@ export default {
                 }
             }
 
+            
+
         }
+        .final{
+                text-align: center;
+                margin-top: 50px;
+
+                p{
+                    font-size: 10px;
+                    color: rgb(160, 159, 159);
+                }
+            }
     }
 </style>
