@@ -81,6 +81,10 @@ export default {
                 .explore{
                     max-height: 120px;
 
+                    p{
+                        margin: 14px 0 !important;
+                    }
+
                     .exploreList{
                         height: 150px;
                         width: 250px;
@@ -119,10 +123,6 @@ export default {
                     font-size: 10px;
                     color: rgb(160, 159, 159);
                 }
-        }
-
-        .explore p{
-            margin: 14px 0 !important;
         }
 
         .info h3, .left h3{

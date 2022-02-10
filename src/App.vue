@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <Header />
+    <div id="header">
+      <Header />
+    </div>
     <Main />
     <div class="footer-cont">
       <Footer :address="addressFooter" :explore="exploreFooter" :information="informationFooter"/>
+      <div class="buttonTop">
+          <a href="#header"><button><i class="fa-solid fa-arrow-up"></i></button></a>
+      </div>
     </div>
     
   </div>
@@ -79,5 +84,27 @@ export default {
 
   .footer-cont{
     background: $second-background;
+    position: relative;
+  }
+
+  .buttonTop{
+      text-align: end;
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+
+      button{
+        height: 60px;
+        width: 60px;
+        border-radius: 40px;
+        border: 0;
+        background: $lightgreen;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+          background: $header-color;
+        }
+      }
   }
 </style>
