@@ -9,7 +9,12 @@
             <div class="center"><img src="../../assets/img1/video-screen.png" alt=""></div>
             <div class="right"><img src="../../assets/img1/home-6-hero-right-person.png" alt=""></div>
           </div>
-
+          <div class="sideMenu">
+              <div><i class="fa-solid fa-ruler-combined"></i></div>
+              <div><i class="fa-solid fa-circle-radiation"></i></div>
+              <div><i class="fa-solid fa-book"></i></div>
+              <div><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
       </div>
   </div>
 </template>
@@ -28,6 +33,21 @@ export default {
       height: 550px;
       text-align: center;
       padding-top: 30px;
+      position: relative;
+
+      .sideMenu{
+          color: black;
+          position: absolute;
+          right: 0;
+          top: 10%;
+          padding: 0px 10px;
+          background: white;
+          border-radius: 5px 0px 0px 5px;
+
+          div{
+              margin: 15px 0;
+          }
+      }
       p{
           font-size: 14px;
           color: grey;
