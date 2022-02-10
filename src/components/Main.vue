@@ -29,6 +29,12 @@
             <MainLearn :CardLearn="learnCard"/>
         </div>
       </div>
+
+      <div class="certification">
+        <div class="contenitore">
+            <MainCertification />
+        </div>
+      </div>
       
   </div>
 </template>
@@ -39,6 +45,7 @@ import MainCourses from './sections/MainCourses.vue'
 import MainTalk from './sections/MainTalk.vue'
 import MainBlogs from './sections/MainBlogs.vue'
 import MainLearn from './sections/MainLearn.vue'
+import MainCertification from './sections/MainCertification.vue'
 
 export default {
     name:'Main',
@@ -47,7 +54,8 @@ export default {
         MainCourses,
         MainTalk,
         MainBlogs,
-        MainLearn
+        MainLearn,
+        MainCertification
     },
     data() {
       return{
@@ -230,5 +238,13 @@ export default {
 
     .courses, .blogs{
         background: #F5F7FA;
+    }
+
+    .learn{
+      box-shadow: inset 0px -50px 50px 25px #EFF1F4;
+    }
+
+    .certification{
+      padding: 80px 0px 50px 0px;
     }
 </style>

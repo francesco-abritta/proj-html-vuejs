@@ -86,8 +86,12 @@ export default {
         .image{
             height: 285px;
             margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            
             img{
                 width: 950px;
+                height: 381px;
             }
         }
     }
