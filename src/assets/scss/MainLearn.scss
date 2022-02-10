@@ -1,0 +1,63 @@
+.cont{
+    padding: 70px 0;
+
+    .titles{
+        text-align: center;
+
+        p{
+            font-size: 12px;
+            color: grey;
+        }
+
+        h1{
+            margin: 20px 0px 60px 0px;
+
+            span{
+                color: $lightgreen;
+            }
+        }
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+
+        .card{
+            max-width: 23%;
+
+            .title{
+                max-width: 100%;
+            }
+
+            h3{
+                margin: 20px 0;
+            }
+
+            p{
+                font-size: 13px;
+                margin-top: 15px;
+                color: grey;
+                line-height: 22px;
+            }
+
+            img{
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        
+    }
+
+    .image{
+        height: 285px;
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            width: 950px;
+            height: 381px;
+        }
+    }
+}

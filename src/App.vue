@@ -81,30 +81,7 @@ export default {
 <style lang="scss">
   @import './assets/global.scss';
     @import './assets/vars.scss';
+    @import './assets/scss/App.scss';
 
-  .footer-cont{
-    background: $second-background;
-    position: relative;
-  }
-
-  .buttonTop{
-      text-align: end;
-      position: absolute;
-      bottom: 40px;
-      right: 40px;
-
-      button{
-        height: 60px;
-        width: 60px;
-        border-radius: 40px;
-        border: 0;
-        background: $lightgreen;
-        color: white;
-        cursor: pointer;
-
-        &:hover{
-          background: $header-color;
-        }
-      }
-  }
+  
 </style>

@@ -46,13 +46,5 @@ export default {
 
 <style scoped lang="scss">
   @import '../assets/vars.scss';
-
-  .header{
-    height: 70px;
-    background-color: $header-color;
-    color: $header-color-text;
-    font-size: $header-font-size;
-  }
-
-  
+  @import '../assets//scss/Header.scss';
 </style>

@@ -28,55 +28,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  img{
-    height: 20px;
-    margin-right: 140px;
-  }
 
-  .voices{
-    width: 87%;
-      ul{
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70px;
+  @import '../../assets/scss/HeaderVoices.scss';
 
-        li{
-          margin: 0px 2px 0px 15px;
-          cursor: pointer;
-        }
-
-        .links{
-          opacity: 0.5;
-        }
-
-        .links:hover{
-          opacity: 1;
-        }
-
-        .fa-chevron-down{
-          font-size:6px; 
-          margin-left:3px; 
-          vertical-align:middle;
-        }
-
-        .input{
-          color: black;
-          background: white;
-          padding: 10px 10px;
-          border-radius: 5px;
-
-            input{
-              border: 0;
-              width: 100px;
-            }
-
-            input:focus {
-              outline-width: 0;
-            }
-        }
-
-      }
-  }
+  
 </style>

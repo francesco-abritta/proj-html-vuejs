@@ -37,61 +37,7 @@ export default {
 <style scoped lang="scss">
 
   @import '../../assets/vars.scss';
+  @import '../../assets/scss/MainBlogs.scss';
 
-    .cont{
-        padding: 70px 0;
-
-        .titles{
-            text-align: center;
-
-            p{
-                font-size: 12px;
-                color: grey;
-            }
-
-            h1{
-                margin: 20px 0px 60px 0px;
-
-                span{
-                    color: $lightgreen;
-                }
-            }
-        }
-
-        .cards{
-            display: flex;
-            justify-content: space-between;
-
-            .card{
-                max-width: 31%;
-
-                img{
-                    max-width: 100%;
-                    border-radius: 5px;
-                }
-
-                p{
-                    font-size: 12px;
-                    margin-top: 15px;
-                    color: grey;
-                }
-
-                h3{
-                    line-height: 30px;
-                    margin: 20px 0;
-                }
-
-                .info{
-                    display: flex;
-                    font-size: 13px;
-                    .icon1, .icon2{
-                        margin-right: 15px;
-                        color: grey;
-                    }
-                }
-            }
-
-            
-        }
-    }
+    
 </style>
